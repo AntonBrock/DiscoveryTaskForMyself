@@ -1,0 +1,186 @@
+@main-color: #ffffff;
+@main-colorTwo: #1d1d1d;
+@help-color: #e96b6b;
+@font: 'Roboto', sans-serif;
+
+body {
+    margin: 0;
+    width: 1366px;
+    height: 100%;
+}
+
+.header {
+    height: 100vh;
+    background: url(background.png) 40% 50% no-repeat, center;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    color: @main-color;
+    font-family: @font;
+    
+    .header__menu-ul {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin-left: 750px;
+        list-style-type: none;
+    }
+    
+     li {
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.header-header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-header-main-p {
+    display: flex;
+    position: relative;
+    margin-top: 180px;
+    color: @main-color;
+    font-family: @font;
+    font-size: 130px;
+    font-weight: 600;
+}
+
+.header-header-second-p {
+    display: flex;
+    position: absolute;
+    margin-top: 340px;
+    color: #d2d0d0;
+    font-size: 24px;
+    font-family: @font;
+}
+
+.header-botton {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.about {
+    height: 80vh;
+    position: relative;
+    padding-top: 50px;
+}
+
+.about img {
+    z-index: 0;
+    position: absolute;
+    padding-left: 680px;
+    margin-top: 50px;
+}
+
+.text-big {
+    width: 900px;
+    z-index: 5;
+    
+    h1 {
+        position: relative;
+        font-size: 180px;
+        color: @main-colorTwo;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        position: absolute;
+        font-size: 20px;
+        font-weight: 600;
+        color: @main-colorTwo;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+.text-small {
+    width: 600px;
+    margin-left: 20px;
+    color: #525252;
+    font-size: 20px;
+}
+
+// Team 
+
+.team {
+    height: 100vh;
+    background: #224571;
+    background: url(background-menForTeam.png) 40% 50% no-repeat, center; 
+}
+
+.blueBlockTeam {
+    position: absolute;
+    margin-left: 800px;
+}
+
+.nameContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 25px;
+    color: @main-color;
+}
+
+.team-mainTeam {
+    display: flex;
+    flex-direction: row;
+
+    p {
+        z-index: 5;
+        position: relative;
+        width: 250px;
+        margin-left: 20px;
+        margin-top: 120px;
+        color: @main-color;
+    }
+    
+    span {
+        z-index: 5;
+        position: absolute;
+        font-size: 18px;
+        margin-left: 20px;
+        color: @main-color;
+        font-weight: 600;
+        margin-top: 90px;
+
+    }
+
+}
+
+.team-mainTeam-1 {
+    margin-left: 150px;
+    z-index: 1;
+    height: 200px;
+}
+
+.team-mainTeam-2 {
+    z-index: 5;
+    position: absolute;
+    padding-left: 570px;
+    height: 250px;
+}
+
+.team-mainTeam-3 {
+    z-index: 1;
+    position: absolute;
+    padding-left: 750px;
+    height: 200px;
+}
+
+.elipse {
+    position: absolute;
+    z-index: 2;
+}
